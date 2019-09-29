@@ -8,7 +8,7 @@ node {
         echo "testing"
     }
 }
-stage('Get approval'){
+stage('Get approval for QA Deployment'){
     input "Deploy to qa?"
 }
 node {
@@ -16,7 +16,7 @@ node {
         echo "deploying to qa"
     }
 }
-stage('Get approval'){
+stage('Get approval for Production Deployment'){
     input "Do you really want to deploy to Production environment?"
 }
 node {
